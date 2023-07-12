@@ -1,0 +1,78 @@
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .card {
+    width: 320px;
+    height: 420px;
+    background: $color-primario;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 20px;
+
+  
+    
+  .card__img {
+      width: 80%;
+      height: 204px;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      margin: auto;
+  
+      img {
+        max-width: 80%;
+      }
+    }
+  
+      .card__item {
+      
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+  
+      h3 {
+        font-size: 20px;
+        color: $color-texto;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+      }
+  
+      .item__price {
+        font-size: 24px;
+        color: $color-texto;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+      }
+  
+      .btn__Buy {
+              
+        padding: 10px 30px;
+        margin-top: 35px;
+        color: $color-texto;
+        text-decoration: none;
+        background: $color-enlace;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 1px solid black;
+      }
+  
+      &:hover .btn__Buy {
+        border: 1px solid $color-fondo;
+      }
+    }
+  }
