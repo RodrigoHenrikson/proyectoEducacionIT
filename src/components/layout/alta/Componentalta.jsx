@@ -10,8 +10,6 @@ const Componentalta = () => {
     descripcion_corta: '',
     descripcion_larga: '',
     envio_sin_cargo: '',
-    edad_desde: '',
-    edad_hasta: '',
     foto: null
   });
 
@@ -77,8 +75,6 @@ const Componentalta = () => {
       descripcion_corta: '',
       descripcion_larga: '',
       envio_sin_cargo: '',
-      edad_desde: '',
-      edad_hasta: '',
       foto: null
     });
   };
@@ -120,13 +116,7 @@ const Componentalta = () => {
         <input type="radio" id="envio_sin_cargo_no" name="envio_sin_cargo" value="no" checked={formData.envio_sin_cargo === 'no'} onChange={handleInputChange} required />
         <label htmlFor="envio_sin_cargo_no">No</label>
       </div>
-
-      <label className="frmLabel" htmlFor="edad_desde">Edad desde:</label>
-      <input className="field" type="number" id="edad_desde" name="edad_desde" value={formData.edad_desde} onChange={handleInputChange} />
-
-      <label className="frmLabel" htmlFor="edad_hasta">Edad hasta:</label>
-      <input className="field" type="number" id="edad_hasta" name="edad_hasta" value={formData.edad_hasta} onChange={handleInputChange} />
-
+         
       <label className="frmLabel" htmlFor="foto">Foto:</label>
       <input className="field" type="file" id="foto" name="foto" accept="image/*" onChange={(event) => setFormData({ ...formData, foto: event.target.files[0] })} required />
 
