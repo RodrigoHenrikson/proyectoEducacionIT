@@ -4,7 +4,7 @@ import NavBar from "../header/navbar";
 import Footer from "../footer/footer";
 import Aside from "../aside/aside";
 import SectionHeader from "../section.cards.header/section-cards-header";
-import SearchBar from "../../search-bar/searchbar";
+import SearchBar from "../../search/searchbar";
 import Container from "../container/container";
 
 const MainLayout = ({ pageTitle, pageDescription, children }) => (

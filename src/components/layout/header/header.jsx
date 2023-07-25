@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from '../../search-bar/searchbar';
+import SearchBar from '../../search/searchbar';
 import NavBar from './navbar';
 
 const MainHeader = () => {

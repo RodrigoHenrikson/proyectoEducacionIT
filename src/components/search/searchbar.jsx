@@ -1,6 +1,9 @@
 import React from 'react';
 
 function SearchBar() {
+  
+  
+
   return (
     <div className="search-bar">
       <form action="" className="search-bar__form-container">
