@@ -2,15 +2,13 @@ import "./MainLayout.scss";
 import MainHeader from "../header/header";
 import NavBar from "../header/navbar";
 import Footer from "../footer/footer";
-import Aside from "../aside/aside";
-import SectionHeader from "../section.cards.header/section-cards-header";
-import SearchBar from "../../search/searchbar";
 import Container from "../container/container";
+import Carrito from "../../search/Carrito";
 
 const MainLayout = ({ pageTitle, pageDescription, children }) => (
   <>
     <MainHeader>
-      <SearchBar />
+      <Carrito />
       <div className="nameandlogo__container">
         <div id="namePhoenix">
           <h1 className="name__Phoenix">Phoenix Store</h1>

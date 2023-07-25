@@ -89,6 +89,22 @@ header {
   }
 }
 
+.carrito-container {
+  background-image: url(../../../../public/img/carrito.png);
+  height: 20px;
+  width: 20px;
+  z-index: 110;
+  position: absolute;
+  background-size: cover;
+  color: wheat;
+  background-color: #fff;
+  padding: 6px;
+  border: 3px solid #76287c;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
 .search-bar__form-container {
   display: flex;
   position: absolute;
@@ -196,22 +212,34 @@ footer {
 
 // ---------------CARDS------------
 
+.barraBusqueda input {
+   font-size: 16px;
+   height: 1.3em;
+   margin: 10px;
+   padding: 3px;
+   border: 2px solid black;
+   position: absolute;
+   left: 100px;
+   
+}
+
 .cards__container {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 20px;
   }
   
   .card {
     width: 320px;
-    height: 420px;
+    height: 470px;
     background: $color-primario;
     border-radius: 20px;
     border: 2px solid black;
     margin: 20px;
+    margin-top: 25px;
 
   
     
@@ -249,7 +277,15 @@ footer {
         margin-bottom: 2px;
         font-family: 'Trebuchet MS', Arial, sans-serif;
       }
-  
+      
+      h4 {
+        font-size: 13px;
+        padding: 5px;
+        margin-top: 1px;
+        height: 38px;
+        
+      }
+
       .item__price {
         font-size: 30px;
         color: $color-texto;
@@ -392,13 +428,12 @@ footer {
       margin: 5px;
     }
     
-    .search-bar__form-container {
-      position: absolute;
-      transform: translate(0, -50%);
-      transform: scale(0.7);
-      top: 1px;
-      right: -20px;
+    .carrito-container {
+      height: 5px;
+      width: 10px;
     }
+
+   
     
     .sidebar {
       display: none;
@@ -444,14 +479,9 @@ footer {
       margin-top: -175px;
     }
     
-    .search-bar__form-container {
-      top: 14px;
-      right: 22px;
-    }
-    
-    .search-bar__carrito-container {
-      top: 14px;
-      margin-right: 15px;
+    .carrito-container {
+      height: 10px;
+      width: 10px;
     }
     
     .cards__container {

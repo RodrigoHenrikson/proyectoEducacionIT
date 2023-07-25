@@ -20,7 +20,7 @@ export default function Index()
         <FilterProvider>
         <MainLayout pageTitle={"Productos"} pageDescription={"¡Explora nuestro catálogo y encuentra las mejores ofertas del mercado!"} >
            
-                <BarraBusqueda />
+                
                 <CardList />
                     
            
@@ -34,13 +34,3 @@ export default function Index()
 
 
 
-
-{/* COMENTO HASTA SOLUCIONAR DE LLEVARLO ARRIBA A LA DERECHA
-            <input type="search" onInput={
-                (e) =>
-                {
-                    searchParams.set('q', e.target.value);
-                    searchParams.set('d', Date.now());
-                    setSearchParams(searchParams);
-                }
-            } /> */} 

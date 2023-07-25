@@ -58,21 +58,21 @@ const CardItem = ({ item }) => (
   const BarraBusqueda = () => 
     {
 
-  const [filtro, _setFiltro] = useState('');
-  const filterContext = useContext(FilterContext);
+        const [filtro, _setFiltro] = useState('');
+        const filterContext = useContext(FilterContext);
 
-  function setFiltro(val) {
+        function setFiltro(val) {
 
-    _setFiltro(val);
-    filterContext.setFilter(val);
+          _setFiltro(val);
+          filterContext.setFilter(val);
 
-  }
+        }
 
-  return (     
-    <div className="barraBusqueda">
-        <input value={filtro} onChange={(e) => setFiltro(e.target.value)} />
-    </div>
-  );
+        return (     
+          <div className="barraBusqueda">
+              <input value={filtro} onChange={(e) => setFiltro(e.target.value)} placeholder="Busqueda" />
+          </div>
+        );
     }
 
   const CardList = () =>
@@ -97,14 +97,16 @@ const CardItem = ({ item }) => (
     const listadoFiltrado = Buscar(items, filterContext.filter)
 
     return (
-       
+        <>
+        <BarraBusqueda />
         <div className="cards__container">
         {listadoFiltrado.map((val, ix) => (
-         
-            <Card item={val} key={ix} />
-         
+
+          <Card item={val} key={ix} />
+
         ))}
       </div>
+      </>
     );
   };
 
