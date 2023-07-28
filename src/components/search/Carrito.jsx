@@ -1,4 +1,5 @@
 import React from 'react';
+import "./carrito.scss"
 
 function Carrito() {
   

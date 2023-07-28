@@ -1,4 +1,4 @@
-
+import './nosotros.scss';
 
 const ComponentNosotros = () => {
 

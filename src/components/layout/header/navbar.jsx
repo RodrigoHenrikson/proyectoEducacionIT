@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Carrito from '../../search/Carrito';
+import "./navbar.scss"
 
 const NavBar = () => {
   return (

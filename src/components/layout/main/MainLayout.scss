@@ -26,68 +26,6 @@ body {
   font-family: 'Archivo', sans-serif;
 }
 
-header {
-  width: 100%;
-  height: 400px;
-  position: relative;
-
-  .nameandlogo__container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    
-    
-    .name__Phoenix {
-      margin-top: 100px;
-      position: static;
-      font-size: 3rem;
-      border: 6px dashed;
-    }
-   
-    .logo {
-      background-image: url(../../../../public/img/LOGOFENIX.png);
-      width: 220px;
-      height: 200px;
-      position: static;
-      top: 20px;
-      margin-top: 5px;
-      background-size: cover;
-      overflow: visible;   
-    } 
-  }
-}
-
-.nav-bar__nav-list {
-  list-style: none;
-  display: flex;
-  font-size: 40px;
-  justify-content: left;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  margin-top: -170px;
-  border: 1px solid black;
-  gap: 0.1em;
-  background-color: $color-secundario;
-  width: 100%;
-  color: $color-primario;
-
-  .nav-bar__nav-item {
-    margin: 10px 5px;
-  }
-
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.8em;
-    color: $color-primario;
-  }
-}
 
 .carrito-container {
   background-image: url(../../../../public/img/carrito.png);
@@ -105,26 +43,7 @@ header {
   right: 10px;
 }
 
-.search-bar__form-container {
-  display: flex;
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  background-color: aliceblue;
-  z-index: 1;
-  padding: 3px;
-}
 
-.search-bar__carrito-container {
-  display: flex;
-  position: absolute;
-  top: 20px;
-  right: 240px;
-  z-index: 1;
-  background-color: aliceblue;
-  align-items: center;
-  padding: 5px;
-}
 
 
 
@@ -137,14 +56,7 @@ main {
   background-color: $color-fondo;
 }
 
-.sidebar {
-  width: 20%;
-  background-color: #1869e3;
-  background-image: url(../../../../public/img/hotsale.jpg);
-  background-size: 700px 200px;
-  background-size: contain;
-  background-repeat: repeat;
-}
+
 
 .main__cards {
   background-color: $color-fondo;
@@ -168,162 +80,36 @@ main {
   }
 }
 
-.nosotros__p {
-  font-size: 2.2rem;
-  padding: 25px;
-  text-align: center;
-  line-height: 1.5;
-  color: #551a8b;
-  font-weight: 600;
-}
-
-.img__nosotros {
-  width: 500px;
-  border: 2px solid black;
-  border-radius: 2px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-footer {
-  padding: 30px;
-  text-align: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1rem;
-  color: $color-primario;
-  font-weight: bold;
-  background-color: $color-secundario;
-
-  a {
-    text-decoration: none;
-    margin: 20px 10px;
-    color: inherit;
-  }
-
-  p {
-    margin: 15px 0;
-  }
-}
 
 
-// ---------------CARDS------------
+// ---------------CARDS barra busqueda y Conteiner------------
 
 .barraBusqueda input {
-   font-size: 16px;
-   height: 1.3em;
-   margin: 10px;
-   padding: 3px;
-   border: 2px solid black;
-   position: absolute;
-   left: 100px;
-   
+  font-size: 16px;
+  height: 1.3em;
+  margin: 10px;
+  padding: 3px;
+  border: 2px solid black;
+  position: absolute;
+  left: 100px;
+  
 }
 
 .cards__container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .card {
-    width: 320px;
-    height: 470px;
-    background: $color-primario;
-    border-radius: 20px;
-    border: 2px solid black;
-    margin: 20px;
-    margin-top: 25px;
+ display: flex;
+ flex-wrap: wrap;
+ margin: 20px;
+ align-items: center;
+ justify-content: center;
+ margin-top: 20px;
+}
 
-  
-    
-  .card__img {
-      width: 80%;
-      height: 204px;
-      display: flex;
-      justify-content: center;
-      padding-top: 20px;
-      margin: auto;
-      margin-top: 5px;
-      
-  
-      img {
-        max-width: 80%;
-        border: 2px solid black;
-      }
-    }
-  
-      .card__item {
-      
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      
-  
-      h3 {
-        font-size: 35px;
-        color: $color-texto;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 2px;
-        font-family: 'Trebuchet MS', Arial, sans-serif;
-      }
-      
-      h4 {
-        font-size: 13px;
-        padding: 5px;
-        margin-top: 1px;
-        height: 38px;
-        
-      }
 
-      .item__price {
-        font-size: 30px;
-        color: $color-texto;
-        font-weight: bold;
-        letter-spacing: 1px;
-        margin-bottom: 0px;
-        font-family: 'Trebuchet MS', Arial, sans-serif;
-      }
-  
-      .btn__Buy {
-              
-        padding: 10px 30px;
-        margin-top: 23px;
-        color: $color-texto;
-        text-decoration: none;
-        font-weight: bold;
-        background: $color-enlace;
-        border-radius: 5px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border: 2px solid black;
-         
 
-      }
-       
-      .btn__Buy a {
-        color: $color-secundario; 
-        font-weight: bold;
-        text-decoration: none;
-      }
-       
-      &:hover .btn__Buy {
-        border: 1px solid $color-fondo;
-      }
-    }
-  }
 
-//   ------------FORMULARIO-------------
+
+
+//   -------FORMULARIO (NO LOS SEPARO EN 2 SCSS PORQUE COMPARTEN ESTILOS LOS 2 FORMS-------------
 
 .fmr__alta {
     padding: 30px;
